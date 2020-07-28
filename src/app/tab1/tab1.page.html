@@ -1,17 +1,35 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="warning">
     <ion-title>
-      Tab 1
+      LOGIN
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="dark">
+  
+  <ion-item color="dark">
+    <ion-label>Email</ion-label>
+    <ion-input placeholder="exemplo@email.com"></ion-input>
+  </ion-item>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-item color="dark">
+    <ion-label>Senha</ion-label>
+    <ion-input placeholder="******"></ion-input>
+  </ion-item>
+  
+  <ion-item color="dark">
+    <ion-label>Manter logado</ion-label>
+    <ion-checkbox slot="start"></ion-checkbox>
+  </ion-item>
+  
+  <ion-item color="dark">
+    <ion-button color="warning" slot="start">
+      Cadastrar
+    </ion-button>
+    <ion-button color="warning" slot="end">
+      Entrar
+    </ion-button>
+  </ion-item>
+
 </ion-content>
